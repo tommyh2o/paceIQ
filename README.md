@@ -39,6 +39,23 @@
 - **MongoDB** (planned) for user data and run tracking storage
 - **User Authentication** (planned) using OAuth or Passport.js
 
+---
+
+## ✅ To-Do / In Progress
+- Connect sign-up to backend using Node.js
+- Enable Google/Apple auth flows
+- Build "Track My Run" dashboard
+- Add chart components (e.g. Recharts or Chart.js)
+- Integrate MongoDB for user & run data
+
+---
+
+📬 Contact
+Created by Tommy Q Huynh
+
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/tommyqhuynh)!
+
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
