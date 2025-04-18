@@ -1,0 +1,184 @@
+/* src/pages/LearnMore.css */
+
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+}
+.logo {
+  font-size: 42px;
+  font-family: "Cherry Bomb One";
+  color: #2a9fd6;
+}
+.login-btn {
+  background: none;
+  border: 2px solid black;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.learn-section {
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  background-color: #fdfdfd;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.info-block {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-block-2 {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.learn-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.learn-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.signup-cta {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* Two column image + text layout */
+
+.watch-image {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  flex: 1;
+  min-height: 400px;
+  max-width: 300px;
+  background-image: url("../../public/images/watch.jpg");
+}
+
+.img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; /* change the value as needed */
+}
+
+.leaderboard-image {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  flex: 1;
+  min-height: 300px;
+  max-width: 400px;
+  background-image: url("../../public/images/leaderboard.png");
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.learn-section > .info-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* ----------------------- */
+/* Responsive Styles Below */
+/* ----------------------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .login-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .learn-section {
+    padding: 1rem;
+    gap: 3rem;
+  }
+
+  .info-block,
+  .info-block-2 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .learn-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .learn-section p,
+  .signup-cta {
+    font-size: 0.95rem;
+  }
+
+  .watch-image,
+  .leaderboard-image {
+    width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+  }
+
+  .learn-section > .info-row {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
