@@ -1,3 +1,50 @@
+# PaceIQ 🏃‍♂️📊
+
+**PaceIQ** is a responsive web application built to help runners visualize and track performance data. With a sleek UI and smooth navigation, the platform offers an elegant landing experience and sets the foundation for deeper user engagement through a planned data-driven backend.
+
+## 🚀 Features
+
+- 📸 Bold and visual landing page
+- 🧭 Seamless navigation between pages with **React Router**
+- 💡 Clear value proposition with eye-catching design
+- 📱 Responsive layout across devices (mobile, tablet, desktop)
+- 🖼️ Center-column hero section with a background split layout
+- 🔐 Sign-up options with animated buttons (Google / Apple)
+- 📉 Graph image showcasing potential analytics capabilities
+- 🧭 Sticky navbar with animated hover interactions
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+- **React.js** (bootstrapped with `create-react-app`)
+- **React Router** for client-side routing
+- **CSS** for layout and styling (including media queries for responsiveness)
+- **Custom fonts**:
+  - Cherry Bomb One (for brand/logo)
+  - Barlow Condensed (for headings and hero text)
+- **Google/Apple Icon Buttons** with hover animations
+- **Responsive design** via flexbox, CSS transitions, and scaling
+
+### **Assets & Design**
+- Designed using **Canva**
+- Visual assets stored in `public/images`
+- Hero section background split with graph overlay
+- Hover underline animation on nav links using CSS pseudo-elements
+
+### **Planned Backend**
+- **Node.js** for server-side logic (sign-up, user data)
+- **Express.js** (planned) for API routes
+- **MongoDB** (planned) for user data and run tracking storage
+- **User Authentication** (planned) using OAuth or Passport.js
+
+---
+
+## 📁 Folder Structure
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
