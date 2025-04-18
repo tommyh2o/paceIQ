@@ -39,12 +39,6 @@
 - **MongoDB** (planned) for user data and run tracking storage
 - **User Authentication** (planned) using OAuth or Passport.js
 
----
-
-## 📁 Folder Structure
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
