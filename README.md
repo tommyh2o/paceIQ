@@ -34,19 +34,19 @@
 - Hover underline animation on nav links using CSS pseudo-elements
 
 ### **Planned Backend**
-- **Node.js** for server-side logic (sign-up, user data)
-- **Express.js** (planned) for API routes
-- **MongoDB** (planned) for user data and run tracking storage
+- **Firebase Authentication** for Google/Apple sign-in
+- **Cloud Firestore** for user and run tracking data
+- **Chart.js or Recharts** (planned) for performance analytics dashboard
 - **User Authentication** (planned) using OAuth or Passport.js
 
 ---
 
 ## ✅ To-Do / In Progress
-- Connect sign-up to backend using Node.js
-- Enable Google/Apple auth flows
+- Connect sign-up functionality using Firebase Auth
+- Store run and user data with Firestore
 - Build "Track My Run" dashboard
 - Add chart components (e.g. Recharts or Chart.js)
-- Integrate MongoDB for user & run data
+- Deploy to Firebase Hosting or Netlify
 
 ---
 
