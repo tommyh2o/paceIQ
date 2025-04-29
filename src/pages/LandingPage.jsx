@@ -1,8 +1,35 @@
+// src/LandingPage.js
 import React from "react";
 import "./LandingPage.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContext";
 
 const LandingPage = () => {
+  const { currentUser, signInWithGoogle, signInWithApple } = useAuth();
+  const navigate = useNavigate();
+  
+  const handleEmailSignup = () => {
+    navigate("/signup");
+  };
+  
+  const handleGoogleSignup = async () => {
+    try {
+      await signInWithGoogle();
+      navigate("/dashboard");
+    } catch (error) {
+      console.error("Failed to sign in with Google:", error);
+    }
+  };
+  
+  const handleAppleSignup = async () => {
+    try {
+      await signInWithApple();
+      navigate("/dashboard");
+    } catch (error) {
+      console.error("Failed to sign in with Apple:", error);
+    }
+  };
+
   return (
     <div className="landing-container">
       <div className="navbar">
@@ -10,7 +37,7 @@ const LandingPage = () => {
         <Link to="/learn-more" className="learn-more-link">
           Learn More
         </Link>
-        <button className="login-btn">Log In</button>
+        <Link to="/login" className="login-btn">Log In</Link>
       </div>
       <div className="center-wrapper">
         <div className="center-card">
@@ -31,7 +58,10 @@ const LandingPage = () => {
             <p>
               Sign up now! <Link to="/login">Or login here.</Link>
             </p>
-            <button className="icon-left-btn">
+            <button 
+              className="icon-left-btn"
+              onClick={handleGoogleSignup}
+            >
               <img
                 src="/images/google-icon.svg"
                 alt="Google"
@@ -40,7 +70,10 @@ const LandingPage = () => {
               <span className="btn-text">Sign Up With Google</span>
             </button>
 
-            <button className="icon-left-btn">
+            <button 
+              className="icon-left-btn"
+              onClick={handleAppleSignup}
+            >
               <img
                 src="/images/apple-icon.svg"
                 alt="Apple"
@@ -48,7 +81,12 @@ const LandingPage = () => {
               />
               <span className="btn-text">Sign Up With Apple</span>
             </button>
-            <button className="email-btn">Sign up with email</button>
+            <button 
+              className="email-btn"
+              onClick={handleEmailSignup}
+            >
+              Sign up with email
+            </button>
           </div>
         </div>
       </div>
